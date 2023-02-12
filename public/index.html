@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Get pre signed URL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../public/css/bootstrap.css" />
+</head>
+
+<body>
+    <h1 class="container" id="page">Page 1</h1>
+    <div class="container">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item"><span class="page-link" onClick="page(1)">1</span></li>
+                <li class="page-item" aria-current="page">
+                    <span class="page-link" onClick="page(2)">2</span>
+                </li>
+                <li class="page-item"><span class="page-link" onClick="page(3)">3</span></li>
+            </ul>
+        </nav>
+        <script src="./../public/js/jquery.js"></script>
+        <script>
+            function page(index) {
+                console.log(index);
+                $("#page").text(`Page ${index}`);
+            }
+        </script>
+</body>
+
+</html>
